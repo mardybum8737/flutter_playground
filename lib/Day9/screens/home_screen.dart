@@ -46,7 +46,7 @@ class HomeScreen extends StatelessWidget {
                                 ),
                               ),
                               content: Text(
-                                'Add something here!😜',
+                                'Add something here! 😜',
                                 style: GoogleFonts.archivo(
                                   textStyle: const TextStyle(
                                       fontWeight: FontWeight.w300,
