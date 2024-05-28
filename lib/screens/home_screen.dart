@@ -36,7 +36,7 @@ class HomeScreen extends StatelessWidget {
                           builder: (BuildContext context) {
                             return AlertDialog(
                               title: Text(
-                                'Add',
+                                'Add Popup',
                                 style: GoogleFonts.archivo(
                                   textStyle: const TextStyle(
                                       fontWeight: FontWeight.w600,
