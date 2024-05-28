@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_playground/Day9/screens/widgets/card.dart';
+import 'package:flutter_playground/Day9/widgets/card.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:flutter_playground/Day9/screens/widgets/calendar_text.dart';
+import 'package:flutter_playground/Day9/widgets/calendar_text.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});

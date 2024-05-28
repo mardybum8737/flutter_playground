@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_playground/widgets/card_min.dart';
-import 'package:flutter_playground/widgets/card_hour.dart';
-import 'package:flutter_playground/widgets/participant.dart';
+import 'package:flutter_playground/Day9/widgets/card_min.dart';
+import 'package:flutter_playground/Day9/widgets/card_hour.dart';
+import 'package:flutter_playground/Day9/widgets/participant.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class ScheduleCard extends StatelessWidget {
