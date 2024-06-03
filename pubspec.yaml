@@ -10,6 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
   google_fonts: 6.1.0
+  http: ^1.2.0
   scroll_snap_list: ^0.9.1
 
 dev_dependencies:

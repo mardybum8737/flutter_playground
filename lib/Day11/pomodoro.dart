@@ -314,14 +314,14 @@ class _PomodoroState extends State<Pomodoro> {
                   icon: Icon(isRunning ? Icons.pause : Icons.play_arrow),
                   onPressed: isRunning ? onPausePressed : onStartPressed,
                   style: ButtonStyle(
-                    iconSize: MaterialStateProperty.all<double>(60),
-                    fixedSize: MaterialStateProperty.all<Size>(
+                    iconSize: WidgetStateProperty.all<double>(60),
+                    fixedSize: WidgetStateProperty.all<Size>(
                       const Size(150, 90),
                     ),
-                    foregroundColor: MaterialStateProperty.all<Color>(
+                    foregroundColor: WidgetStateProperty.all<Color>(
                       Theme.of(context).cardColor,
                     ),
-                    backgroundColor: MaterialStateProperty.all<Color>(
+                    backgroundColor: WidgetStateProperty.all<Color>(
                       Theme.of(context).primaryColorDark,
                     ),
                   ),
@@ -333,14 +333,14 @@ class _PomodoroState extends State<Pomodoro> {
                           onPressed: onRefreshed,
                           icon: const Icon(Icons.refresh),
                           style: ButtonStyle(
-                            iconSize: MaterialStateProperty.all<double>(60),
-                            fixedSize: MaterialStateProperty.all<Size>(
+                            iconSize: WidgetStateProperty.all<double>(60),
+                            fixedSize: WidgetStateProperty.all<Size>(
                               const Size(150, 90),
                             ),
-                            foregroundColor: MaterialStateProperty.all<Color>(
+                            foregroundColor: WidgetStateProperty.all<Color>(
                               Theme.of(context).cardColor,
                             ),
-                            backgroundColor: MaterialStateProperty.all<Color>(
+                            backgroundColor: WidgetStateProperty.all<Color>(
                               Theme.of(context).primaryColorDark,
                             ),
                           ),
@@ -371,7 +371,7 @@ class _PomodoroState extends State<Pomodoro> {
                       Text('GOAL',
                           style: Theme.of(context).textTheme.bodyMedium)
                     ],
-                  )
+                  ),
                 ],
               ),
             )
