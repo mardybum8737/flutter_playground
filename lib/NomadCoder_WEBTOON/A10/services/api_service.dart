@@ -1,7 +1,7 @@
 import 'dart:convert';
 
-import 'package:flutter_playground/A10/models/movie_detail_model.dart';
-import 'package:flutter_playground/A10/models/movie_model.dart';
+import 'package:flutter_playground/NomadCoder_WEBTOON/A10/models/movie_detail_model.dart';
+import 'package:flutter_playground/NomadCoder_WEBTOON/A10/models/movie_model.dart';
 import 'package:http/http.dart' as http;
 
 class ApiService {

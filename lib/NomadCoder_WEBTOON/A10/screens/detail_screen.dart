@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_playground/A10/services/api_service.dart';
+import 'package:flutter_playground/NomadCoder_WEBTOON/A10/services/api_service.dart';
 
 class DetailScreen extends StatelessWidget {
   const DetailScreen({

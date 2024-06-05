@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_playground/A10/models/movie_model.dart';
-import 'package:flutter_playground/A10/screens/detail_screen.dart';
-import 'package:flutter_playground/A10/services/api_service.dart';
-import 'package:flutter_playground/A10/widgets/with_title_movie_card.dart';
-import 'package:flutter_playground/A10/widgets/wide_movie_card.dart';
+import 'package:flutter_playground/NomadCoder_WEBTOON/A10/models/movie_model.dart';
+import 'package:flutter_playground/NomadCoder_WEBTOON/A10/screens/detail_screen.dart';
+import 'package:flutter_playground/NomadCoder_WEBTOON/A10/services/api_service.dart';
+import 'package:flutter_playground/NomadCoder_WEBTOON/A10/widgets/with_title_movie_card.dart';
+import 'package:flutter_playground/NomadCoder_WEBTOON/A10/widgets/wide_movie_card.dart';
 
 class HomeScreen extends StatelessWidget {
   final Future<List<MovieModel>> popularMovies =
