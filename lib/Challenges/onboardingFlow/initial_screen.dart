@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_playground/Challenges/onboardingFlow/create_account_screen.dart';
 import 'package:flutter_playground/Challenges/onboardingFlow/widgets/auth_button.dart';
 import 'package:flutter_playground/Challenges/onboardingFlow/widgets/googlelogo.dart';
 import 'package:flutter_playground/Challenges/onboardingFlow/widgets/grey_bar.dart';
+import 'package:flutter_playground/Challenges/onboardingFlow/widgets/text_span.dart';
 import 'package:flutter_playground/NomadCoder_TIKTOK/constants/gaps.dart';
 import 'package:flutter_playground/NomadCoder_TIKTOK/constants/sizes.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -11,10 +13,19 @@ class InitialScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    void onCreateAccountTap() {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => const CreateAccountScreen(),
+        ),
+      );
+    }
+
     return Scaffold(
       appBar: AppBar(
         title: const FaIcon(FontAwesomeIcons.twitter,
-            color: Colors.blue, size: 40),
+            color: Colors.blueAccent, size: 32),
       ),
       body: SafeArea(
         child: Padding(
@@ -64,8 +75,43 @@ class InitialScreen extends StatelessWidget {
                 icon: const SizedBox(
                   width: 0,
                 ),
-                onTap: () {},
+                onTap: onCreateAccountTap,
                 isWhite: false),
+            Gaps.v40,
+            Column(
+              children: [
+                Row(
+                  children: [
+                    RichText(
+                      text: parentRichTextSpan(
+                          'By signing up, you agree to our ',
+                          [richTextSpanLink('Terms'), richTextSpan(',')]),
+                    ),
+                  ],
+                ),
+                Gaps.v6,
+                Row(
+                  children: [
+                    RichText(
+                      text: parentRichTextSpanLink('Privacy Policy', [
+                        richTextSpan(', and '),
+                        richTextSpanLink('Cookie Use'),
+                        richTextSpan('.')
+                      ]),
+                    )
+                  ],
+                ),
+              ],
+            ),
+            Gaps.v40,
+            Row(
+              children: [
+                RichText(
+                  text: parentRichTextSpan('Already have an account?',
+                      [richTextSpanLink('  Log in')]),
+                ),
+              ],
+            ),
           ]),
         ),
       ),
