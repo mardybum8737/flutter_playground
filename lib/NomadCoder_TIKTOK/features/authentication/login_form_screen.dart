@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_playground/NomadCoder_TIKTOK/constants/gaps.dart';
 import 'package:flutter_playground/NomadCoder_TIKTOK/constants/sizes.dart';
 import 'package:flutter_playground/NomadCoder_TIKTOK/features/authentication/widgets/form_button.dart';
+import 'package:flutter_playground/NomadCoder_TIKTOK/features/onboarding/interests_screen.dart';
 
 class LoginFormScreen extends StatefulWidget {
   const LoginFormScreen({super.key});
@@ -19,7 +20,11 @@ class _LoginFormScreenState extends State<LoginFormScreen> {
     if (_formKey.currentState != null) {
       if (_formKey.currentState!.validate()) {
         _formKey.currentState!.save();
-        print(formData);
+        Navigator.of(context).push(
+          MaterialPageRoute(
+            builder: (context) => const InterestScreen(),
+          ),
+        );
       }
     }
   }

@@ -113,11 +113,6 @@ class _CreateAccountScreenState extends State<CreateAccountScreen> {
                               ),
                         alignLabelWithHint: true,
                         labelText: 'Name',
-                        labelStyle: const TextStyle(
-                          fontSize: Sizes.size20,
-                          fontWeight: FontWeight.w400,
-                          color: Colors.black,
-                        ),
                       ),
                       validator: (value) {
                         if (value!.isEmpty) {

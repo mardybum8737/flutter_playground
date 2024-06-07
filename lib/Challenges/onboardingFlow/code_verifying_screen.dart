@@ -1,31 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_playground/Challenges/onboardingFlow/code_verifying_screen.dart';
 import 'package:flutter_playground/Challenges/onboardingFlow/widgets/active_button.dart';
 import 'package:flutter_playground/NomadCoder_TIKTOK/constants/gaps.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class CustomizeScreen extends StatefulWidget {
-  const CustomizeScreen({super.key});
+class CodeVerifyingScreen extends StatefulWidget {
+  const CodeVerifyingScreen({super.key});
 
   @override
-  State<CustomizeScreen> createState() => _CustomizeScreenState();
+  State<CodeVerifyingScreen> createState() => _CustomizeScreenState();
 }
 
-class _CustomizeScreenState extends State<CustomizeScreen> {
+class _CustomizeScreenState extends State<CodeVerifyingScreen> {
   bool isChecked = false;
-
-  void _onNextTap() {
-    if (isChecked == false) {
-      return;
-    } else {
-      Navigator.push(
-        context,
-        MaterialPageRoute(
-          builder: (context) => const CodeVerifyingScreen(),
-        ),
-      );
-    }
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -46,11 +32,11 @@ class _CustomizeScreenState extends State<CustomizeScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const SizedBox(height: 80),
+            const SizedBox(height: 40),
             const Text(
-              'Customize your',
+              'We sent you a code',
               style: TextStyle(
-                fontSize: 32,
+                fontSize: 30,
                 fontWeight: FontWeight.w900,
               ),
             ),
@@ -116,13 +102,14 @@ class _CustomizeScreenState extends State<CustomizeScreen> {
                     Text(
                       'phone number.',
                       style: TextStyle(
-                        fontSize: 18,
+                        fontSize: 16,
                         fontWeight: FontWeight.w500,
                         letterSpacing: 0.1,
                       ),
                     ),
                   ],
                 ),
+                Gaps.h40,
                 Switch.adaptive(
                   value: isChecked,
                   onChanged: (value) {
@@ -142,7 +129,7 @@ class _CustomizeScreenState extends State<CustomizeScreen> {
         color: Colors.white,
         child: ActButton(
             text: 'Next',
-            onTap: _onNextTap,
+            onTap: () {},
             color: Colors.blue,
             icon: const SizedBox(
               width: 0,

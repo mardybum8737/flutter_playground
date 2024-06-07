@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_playground/Challenges/onboardingFlow/customize_screen.dart';
 import 'package:flutter_playground/Challenges/onboardingFlow/initial_screen.dart';
 
 void main() {
@@ -19,6 +20,6 @@ class TwitterApp extends StatelessWidget {
           scaffoldBackgroundColor: Colors.white,
           primaryColor: const Color(0xFFE9435A),
         ),
-        home: const InitialScreen());
+        home: const CustomizeScreen());
   }
 }
