@@ -87,11 +87,10 @@ class _UserNameScreenState extends State<BirthdayScreen> {
               ),
             ),
             Gaps.v24,
-            GestureDetector(
+            FormButton(
+              color: Theme.of(context).primaryColor,
               onTap: onNextTap,
-              child: const FormButton(
-                disabled: false,
-              ),
+              disabled: false,
             )
           ],
         ),

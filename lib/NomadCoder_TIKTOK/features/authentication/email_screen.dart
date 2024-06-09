@@ -108,11 +108,10 @@ class _UserNameScreenState extends State<EmailScreen> {
                 ),
               ),
               Gaps.v24,
-              GestureDetector(
+              FormButton(
+                color: Theme.of(context).primaryColor,
                 onTap: _onSubmit,
-                child: FormButton(
-                  disabled: _email.isEmpty || _isEmailValid() != null,
-                ),
+                disabled: _email.isEmpty || _isEmailValid() != null,
               )
             ],
           ),

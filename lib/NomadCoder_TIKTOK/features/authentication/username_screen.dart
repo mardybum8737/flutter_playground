@@ -85,11 +85,10 @@ class _UserNameScreenState extends State<UserNameScreen> {
               ),
             ),
             Gaps.v24,
-            GestureDetector(
+            FormButton(
+              disabled: _userName.isEmpty,
               onTap: onNextTap,
-              child: FormButton(
-                disabled: _userName.isEmpty,
-              ),
+              color: Theme.of(context).primaryColor,
             )
           ],
         ),

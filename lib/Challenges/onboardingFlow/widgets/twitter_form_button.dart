@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_playground/NomadCoder_TIKTOK/constants/sizes.dart';
 
-class FormButton extends StatelessWidget {
-  const FormButton({
+class TwitterFormButton extends StatelessWidget {
+  const TwitterFormButton({
     super.key,
     required this.disabled,
     required this.color,

@@ -20,6 +20,6 @@ class TwitterApp extends StatelessWidget {
           scaffoldBackgroundColor: Colors.white,
           primaryColor: const Color(0xFFE9435A),
         ),
-        home: const CustomizeScreen());
+        home: const InitialScreen());
   }
 }

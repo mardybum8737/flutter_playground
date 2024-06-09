@@ -125,8 +125,8 @@ class _InterestScreenState extends State<InterestScreen> {
                 ),
                 Gaps.v64,
                 Wrap(
-                  runSpacing: 20,
-                  spacing: 20,
+                  runSpacing: 10,
+                  spacing: 10,
                   children: [
                     for (var interest in interests)
                       InterestButton(interest: interest),

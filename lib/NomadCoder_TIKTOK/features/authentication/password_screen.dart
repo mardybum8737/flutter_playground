@@ -9,10 +9,10 @@ class PasswordScreen extends StatefulWidget {
   const PasswordScreen({super.key});
 
   @override
-  State<PasswordScreen> createState() => _UserNameScreenState();
+  State<PasswordScreen> createState() => _PasswordScreenState();
 }
 
-class _UserNameScreenState extends State<PasswordScreen> {
+class _PasswordScreenState extends State<PasswordScreen> {
   final TextEditingController _passwordController = TextEditingController();
 
   String _password = '';
@@ -147,11 +147,10 @@ class _UserNameScreenState extends State<PasswordScreen> {
                 ],
               ),
               Gaps.v24,
-              GestureDetector(
+              FormButton(
                 onTap: _onSubmit,
-                child: FormButton(
-                  disabled: !_isPasswordValid(),
-                ),
+                disabled: !_isPasswordValid(),
+                color: Theme.of(context).primaryColor,
               )
             ],
           ),
