@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_playground/Challenges/onboardingFlow/customize_screen.dart';
-import 'package:flutter_playground/Challenges/onboardingFlow/initial_screen.dart';
+import 'package:flutter_playground/Challenges/twitter_clone/onboardingFlow/customize_screen.dart';
+import 'package:flutter_playground/Challenges/twitter_clone/onboardingFlow/initial_screen.dart';
 
 void main() {
   runApp(const TwitterApp());

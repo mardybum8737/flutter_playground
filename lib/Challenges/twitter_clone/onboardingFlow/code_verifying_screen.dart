@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_playground/Challenges/constants/gaps.dart';
 import 'package:flutter_playground/Challenges/constants/sizes.dart';
-import 'package:flutter_playground/Challenges/onboardingFlow/password_screen.dart';
-import 'package:flutter_playground/Challenges/onboardingFlow/widgets/active_button.dart';
+import 'package:flutter_playground/Challenges/twitter_clone/onboardingFlow/password_screen.dart';
+import 'package:flutter_playground/Challenges/twitter_clone/onboardingFlow/widgets/active_button.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class CodeVerifyingScreen extends StatefulWidget {

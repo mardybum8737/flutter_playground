@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_playground/Challenges/constants/gaps.dart';
 import 'package:flutter_playground/Challenges/constants/sizes.dart';
-import 'package:flutter_playground/Challenges/onboardingFlow/code_verifying_screen.dart';
-import 'package:flutter_playground/Challenges/onboardingFlow/interests_screen.dart';
-import 'package:flutter_playground/Challenges/onboardingFlow/widgets/auth_button.dart';
-import 'package:flutter_playground/Challenges/onboardingFlow/widgets/googlelogo.dart';
-import 'package:flutter_playground/Challenges/onboardingFlow/widgets/grey_bar.dart';
-import 'package:flutter_playground/Challenges/onboardingFlow/widgets/text_span.dart';
+import 'package:flutter_playground/Challenges/twitter_clone/onboardingFlow/code_verifying_screen.dart';
+import 'package:flutter_playground/Challenges/twitter_clone/onboardingFlow/interests_screen.dart';
+import 'package:flutter_playground/Challenges/twitter_clone/onboardingFlow/widgets/auth_button.dart';
+import 'package:flutter_playground/Challenges/twitter_clone/onboardingFlow/widgets/googlelogo.dart';
+import 'package:flutter_playground/Challenges/twitter_clone/onboardingFlow/widgets/grey_bar.dart';
+import 'package:flutter_playground/Challenges/twitter_clone/onboardingFlow/widgets/text_span.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class InitialScreen extends StatelessWidget {
@@ -18,7 +18,7 @@ class InitialScreen extends StatelessWidget {
       Navigator.push(
         context,
         MaterialPageRoute(
-          builder: (context) => const TwitterInterestsScreen(),
+          builder: (context) => const CodeVerifyingScreen(),
         ),
       );
     }

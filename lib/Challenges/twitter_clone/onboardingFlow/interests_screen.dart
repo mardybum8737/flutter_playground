@@ -1,7 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_playground/Challenges/constants/gaps.dart';
-import 'package:flutter_playground/Challenges/onboardingFlow/widgets/interest_button.dart';
+import 'package:flutter_playground/Challenges/twitter_clone/onboardingFlow/interests_screen_part2.dart';
+import 'package:flutter_playground/Challenges/twitter_clone/onboardingFlow/widgets/interest_button.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 const interests = [
@@ -59,6 +60,17 @@ class _TwitterInterestsScreenState extends State<TwitterInterestsScreen> {
 
   bool _onCountThree() {
     return false;
+  }
+
+  void _onNextTap() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) {
+          return const TwitterInterests2Screen();
+        },
+      ),
+    );
   }
 
   @override
@@ -140,21 +152,24 @@ class _TwitterInterestsScreenState extends State<TwitterInterestsScreen> {
               AnimatedOpacity(
                 opacity: 1,
                 duration: const Duration(milliseconds: 200),
-                child: AnimatedContainer(
-                  duration: const Duration(milliseconds: 200),
-                  height: 50,
-                  width: 100,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(25),
-                    color: Colors.black,
-                  ),
-                  child: const Center(
-                    child: Text(
-                      'Next',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
+                child: GestureDetector(
+                  onTap: selected == 3 ? _onNextTap : null,
+                  child: AnimatedContainer(
+                    duration: const Duration(milliseconds: 200),
+                    height: 50,
+                    width: 100,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(25),
+                      color: selected == 3 ? Colors.black : Colors.black38,
+                    ),
+                    child: const Center(
+                      child: Text(
+                        'Next',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ),
                   ),

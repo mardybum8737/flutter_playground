@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_playground/NomadCoder_TIKTOK/features/authentication/signup_screen.dart';
+import 'package:flutter_playground/NomadCoder_TIKTOK/features/main_navigation/main_navigation_screen.dart';
 import 'package:flutter_playground/NomadCoder_TIKTOK/features/onboarding/interests_screen.dart';
 
 void main() {
@@ -25,6 +26,6 @@ class TikTokApp extends StatelessWidget {
           scaffoldBackgroundColor: Colors.white,
           primaryColor: const Color(0xFFE9435A),
         ),
-        home: const InterestScreen());
+        home: const MainNavigationScreen());
   }
 }

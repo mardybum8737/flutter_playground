@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_playground/Challenges/constants/gaps.dart';
 import 'package:flutter_playground/Challenges/constants/sizes.dart';
-import 'package:flutter_playground/Challenges/onboardingFlow/interests_screen.dart';
-import 'package:flutter_playground/Challenges/onboardingFlow/widgets/twitter_form_button.dart';
+import 'package:flutter_playground/Challenges/twitter_clone/onboardingFlow/interests_screen.dart';
+import 'package:flutter_playground/Challenges/twitter_clone/onboardingFlow/widgets/twitter_form_button.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class TwitterPasswordScreen extends StatefulWidget {

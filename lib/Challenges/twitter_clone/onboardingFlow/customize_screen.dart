@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_playground/Challenges/onboardingFlow/code_verifying_screen.dart';
-import 'package:flutter_playground/Challenges/onboardingFlow/widgets/active_button.dart';
+import 'package:flutter_playground/Challenges/twitter_clone/onboardingFlow/code_verifying_screen.dart';
+import 'package:flutter_playground/Challenges/twitter_clone/onboardingFlow/widgets/active_button.dart';
 import 'package:flutter_playground/NomadCoder_TIKTOK/constants/gaps.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
