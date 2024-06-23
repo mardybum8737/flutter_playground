@@ -3,7 +3,9 @@ import 'package:flutter_playground/Challenges/constants/sizes.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class NavPostVideoButton extends StatelessWidget {
-  const NavPostVideoButton({super.key});
+  const NavPostVideoButton({super.key, required this.inverted});
+
+  final bool inverted;
 
   @override
   Widget build(context) {
@@ -38,12 +40,13 @@ class NavPostVideoButton extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: Sizes.size12),
           height: 40,
           decoration: BoxDecoration(
-            color: Colors.white,
+            color: inverted ? Colors.black : Colors.white,
             borderRadius: BorderRadius.circular(Sizes.size8),
           ),
-          child: const Center(
+          child: Center(
             child: FaIcon(
               FontAwesomeIcons.plus,
+              color: inverted ? Colors.white : Colors.black,
               size: Sizes.size20,
             ),
           ),
