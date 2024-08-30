@@ -9,14 +9,17 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  google_fonts: ^6.2.1
-  http: ^1.2.0
+  http: 0.13.6
   scroll_snap_list: ^0.9.1
   font_awesome_flutter: 10.3.0
-  flutter_svg: ^2.0.10+1
+  flutter_screenutil: ^5.9.3
+
   cupertino_icons: ^1.0.8
   video_player: ^2.8.7
   visibility_detector: ^0.4.0+2
+  camera: ^0.11.0+1
+  permission_handler: ^11.3.1
+  gallery_saver: ^2.3.2
 
 dev_dependencies:
   flutter_test:

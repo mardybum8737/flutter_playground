@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_playground/NomadCoder_TIKTOK/constants/gaps.dart';
 import 'package:flutter_playground/NomadCoder_TIKTOK/constants/sizes.dart';
-import 'package:flutter_playground/NomadCoder_TIKTOK/features/main_navigation/main_navigation_screen.dart';
+import 'package:flutter_playground/NomadCoder_TIKTOK/features/inbox/main_navigation/main_navigation_screen.dart';
 
 enum Direction { left, right }
 

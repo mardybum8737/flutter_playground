@@ -35,7 +35,7 @@ class FormButton extends StatelessWidget {
               fontSize: Sizes.size16,
             ),
             child: const Text(
-              'Next',
+              'Continue',
               textAlign: TextAlign.center,
             ),
           ),
